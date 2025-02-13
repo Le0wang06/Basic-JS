@@ -1,0 +1,33 @@
+<!--
+
+  I'm including the node js by using the CDN but you could just download the NPM. Since this is such a small program you can just import it
+  https://www.npmjs.com/package/three?activeTab=versions here is the link for the version. Remember to change it to the most recent one!
+  three.js Documentation: https://threejs.org/docs/index.html#manual/en/introduction/Installation
+
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+		<style>
+			body { margin: 0; padding: 0; box-sizing: border-box; }
+		</style>
+	</head>
+	<body>
+        <script type="importmap">
+            {
+              "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.173.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.173.0/examples/jsm/"
+              }
+            }
+          </script>
+ 
+
+		<script type="module" src="/main.js"></script>
+
+
+	</body>
+</html>
